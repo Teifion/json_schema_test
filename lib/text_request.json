@@ -1,0 +1,25 @@
+{
+  "$id": "account.getThing.request",
+  "type": "object",
+  "properties": {
+    "command": {
+      "const": "account/getThing/request",
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "thingId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "thingId"
+      ]
+    }
+  },
+  "required": [
+    "command",
+    "data"
+  ]
+}

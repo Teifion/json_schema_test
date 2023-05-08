@@ -1,0 +1,35 @@
+{
+  "$id": "account.getThing.response",
+  "type": "object",
+  "properties": {
+    "command": {
+      "const": "account/getThing/response",
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "thing": {
+          "type": "object",
+          "properties": {
+            "thing": {
+              "name": "string",
+              "age": "number"
+            }
+          },
+          "required": [
+            "name",
+            "age"
+          ]
+        }
+      },
+      "required": [
+        "thing"
+      ]
+    }
+  },
+  "required": [
+    "command",
+    "data"
+  ]
+}
