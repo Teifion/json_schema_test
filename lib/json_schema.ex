@@ -37,6 +37,16 @@ defmodule JsonSchema do
     # Now we test it out - Request
     schema = schemas["text_response"]
     IO.inspect JsonXema.validate!(schema, valid_response())
+
+
+
+    # Now we test it out - Request
+    schema = schemas["text_response"]
+    IO.inspect JsonXema.validate(schema, valid_request())
+
+    # Now we test it out - Request
+    schema = schemas["text_request"]
+    IO.inspect JsonXema.validate(schema, valid_response())
   end
 
   defp valid_request do
